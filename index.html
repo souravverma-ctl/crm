@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruit CRM - Candidate Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-item active">
+                <i class="fas fa-th"></i>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-calendar"></i>
+            </div>
+            <div class="sidebar-item">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Header -->
+        <header class="top-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="search-container">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="form-control" placeholder="Search Pipedrive">
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="logo">
+                            <i class="fas fa-circle text-primary"></i>
+                            <span class="fw-bold">recruit crm</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="header-actions d-flex justify-content-end align-items-center">
+                            <button class="btn btn-primary btn-sm me-2">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm me-2">
+                                <i class="fas fa-calendar"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm me-2">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary btn-sm me-3">
+                                <i class="fas fa-bell"></i>
+                            </button>
+                            <div class="user-profile">
+                                <button class="btn btn-outline-secondary me-3">
+                                    <i class="fas fa-user"></i>
+                                </button>
+                                <!-- <img src="/placeholder.svg?height=32&width=32" alt="User" class="rounded-circle me-2"> -->
+                                <div class="user-info">
+                                    <div class="fw-bold">Phyllis Yang</div>
+                                    <small class="text-muted">Silicon Links Inc</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb and Actions -->
+        <div class="container-fluid py-3">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Candidates</a></li>
+                            <li class="breadcrumb-item">Robert Hardy</li>
+                            <li class="breadcrumb-item active">ID - 231</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-outline-secondary me-2">Request Profile Update</button>
+                        <button class="btn btn-outline-secondary me-2">Previous</button>
+                        <button class="btn btn-outline-secondary me-3">Next</button>
+                        <div class="action-icons">
+                            <i class="fas fa-file-alt text-primary me-2"></i>
+                            <i class="fas fa-phone text-success me-2"></i>
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            <i class="fas fa-calendar text-info"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Profile Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left Panel - Profile Details -->
+                <div class="col-md-8">
+                    <!-- Profile Header -->
+                    <div class="profile-header mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="profile-avatar me-3">
+                                <button class="btn btn-outline-secondary me-3">
+                                    <i class="fas fa-user"></i>
+                                </button>
+                            </div>
+                            <div class="profile-info flex-grow-1">
+                                <div class="d-flex align-items-center mb-1">
+                                    <h3 class="mb-0 me-2">William Sample</h3>
+                                    <div class="social-icons">
+                                        <i class="fab fa-facebook text-primary me-1"></i>
+                                        <i class="fab fa-twitter text-info me-1"></i>
+                                        <i class="fab fa-linkedin text-primary me-1"></i>
+                                        <i class="fab fa-github text-dark me-1"></i>
+                                        <i class="fas fa-globe text-secondary"></i>
+                                    </div>
+                                </div>
+                                <div class="text-muted mb-2">Senior Product Manager • United States • Dallas</div>
+                                <div class="contact-info">
+                                    <span class="me-3">
+                                        <i class="fas fa-envelope me-1"></i>
+                                        <a href="mailto:williamsample@gmail.com">williamsample@gmail.com</a>
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-phone me-1"></i>
+                                        +91 9021232326
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="profile-actions align-self-start">
+                                <button class="btn btn-danger btn-sm me-2">Contact Linked</button>
+                                <button class="btn btn-outline-secondary btn-sm me-2">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+
+                                <button class="btn btn-outline-secondary btn-sm me-2">
+                                    <i class="fas fa-calendar"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm me-2">
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                                <button class="btn btn-outline-secondary btn-sm me-3">
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Details Grid -->
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Current Organization</label>
+                                <div>World Bank Group</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Skills</label>
+                                <div>HTML, CSS, Javascript</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Available From</label>
+                                <div>Jul, 14, 2023</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Current Salary</label>
+                                <div>$6000</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Notice Period</label>
+                                <div>90 Days</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Full Address</label>
+                                <div>9400 Ashton Rd, Philadelphia...</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Resume</label>
+                                <div>Resume</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Total Experience</label>
+                                <div>5 Years</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Summary</label>
+                                <div>Current Organization</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Current Employment Status</label>
+                                <div>Employed</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Date of Birth</label>
+                                <div>15 June 1993</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Relevant Experience</label>
+                                <div>7 Years</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Salary Expectation</label>
+                                <div>$9000</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Status</label>
+                                <div>Submitted to Client</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Salary Type</label>
+                                <div>Annual</div>
+                            </div>
+                            <div class="detail-item d-sm-flex mb-3">
+                                <label class="fw-bold text-muted">Language Skills</label>
+                                <div>English(Elementary proficiency)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tabs Section -->
+                    <ul class="nav nav-tabs mb-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#all-details">All Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#assigned-jobs">Assigned Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#related-emails">Related Emails</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#candidate-questions">Candidate Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hotlists">Hotlists</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#related-deals">Related Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts-pitched">Contact(s) Pitched</a>
+                        </li>
+                    </ul>
+
+                    <!-- Assigned Jobs Section -->
+                    <div class="assigned-jobs">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5>Assigned Job to William Sample</h5>
+                            <div>
+                                <button class="btn btn-primary btn-sm me-2">Assign To Job</button>
+                                <button class="btn btn-outline-secondary btn-sm">View All Assigned Jobs</button>
+                            </div>
+                        </div>
+
+                        <!-- Job Items -->
+                        <div class="job-item mb-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <div class="job-avatar me-3">
+                                        <div class="bg-warning d-flex align-items-center justify-content-center"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="fw-bold text-white">M</span>
+                                        </div>
+                                    </div>
+                                    <div class="job-info flex-grow-1">
+                                        <div class="fw-bold">Senior Product Manager</div>
+                                        <div class="text-muted small">Recruit CRM</div>
+                                    </div>
+                                </div>
+                                <div class="job-details me-3">
+                                    <div class="small text-muted">
+                                        <i class="fas fa-user me-1"></i>William Sample
+                                    </div>
+                                    <div class="small text-muted">
+                                        <i class="fas fa-calendar me-1"></i>Jul 10, 2023
+                                    </div>
+                                </div>
+                                <div class="job-status me-3">
+                                    <span class="badge bg-success">Assigned</span>
+                                </div>
+                                <div class="job-actions me-3">
+                                    <button class="btn btn-outline-secondary btn-sm">View Files</button>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="job-item mb-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <div class="job-avatar me-3">
+                                        <div class="bg-warning d-flex align-items-center justify-content-center"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="fw-bold text-white">M</span>
+                                        </div>
+                                    </div>
+                                    <div class="job-info flex-grow-1">
+                                        <div class="fw-bold">Senior Product Manager</div>
+                                        <div class="text-muted small">Recruit CRM</div>
+                                    </div>
+                                </div>
+                                <div class="job-details me-3">
+                                    <div class="small text-muted">
+                                        <i class="fas fa-user me-1"></i>William Sample
+                                    </div>
+                                    <div class="small text-muted">
+                                        <i class="fas fa-calendar me-1"></i>Jul 10, 2023
+                                    </div>
+                                </div>
+                                <div class="job-status me-3">
+                                    <span class="badge bg-success">Assigned</span>
+                                </div>
+                                <div class="job-actions me-3">
+                                    <button class="btn btn-outline-secondary btn-sm">View Files</button>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="job-item mb-3">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <div class="job-avatar me-3">
+                                        <div class="bg-warning d-flex align-items-center justify-content-center"
+                                            style="width: 40px; height: 40px;">
+                                            <span class="fw-bold text-white">M</span>
+                                        </div>
+                                    </div>
+                                    <div class="job-info flex-grow-1">
+                                        <div class="fw-bold">Senior Product Manager</div>
+                                        <div class="text-muted small">Recruit CRM</div>
+                                    </div>
+                                </div>
+                                <div class="job-details me-3">
+                                    <div class="small text-muted">
+                                        <i class="fas fa-user me-1"></i>William Sample
+                                    </div>
+                                    <div class="small text-muted">
+                                        <i class="fas fa-calendar me-1"></i>Jul 10, 2023
+                                    </div>
+                                </div>
+                                <div class="job-status me-3">
+                                    <span class="badge bg-success">Assigned</span>
+                                </div>
+                                <div class="job-actions me-3">
+                                    <button class="btn btn-outline-secondary btn-sm">View Files</button>
+                                </div>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel - Activity Feed -->
+                <div class="col-md-4">
+                    <div class="activity-panel">
+                        <!-- Activity Tabs -->
+                        <ul class="nav nav-pills mb-3 justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#all">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#notes">Notes & Calls</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tasks">Tasks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#meeting">Meeting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#files">Files</a>
+                            </li>
+                        </ul>
+
+                        <!-- Activity Items -->
+                        <div class="activity-item mb-4 p-4 border">
+                            <div class="d-flex">
+                                <div class="activity-content flex-grow-1">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="activity-icon me-3">
+                                            <i class="fas fa-sticky-note text-primary"></i>
+                                        </div>
+                                        <span class="badge bg-primary me-3">Note</span>
+                                        <span class="small text-muted">To Do</span>
+                                    </div>
+                                    <p class="mb-2">Lorem dolore sit et aute cupidatat eu Lorem tempor proident
+                                        consequat. In dolore mollit laborum ex cillum laboris occaecat ipsum Lorem
+                                        cupidatat.</p>
+                                    <div class="">
+                                        <a href="#" class="text-primary small">1 Association(s)</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-user-circle me-1"></i>
+                                            <span class="small">John Doe</span>
+                                        </div>
+                                        <span class="small text-muted">Jul 12, 2023, 11:54 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item mb-4 p-4 border">
+                            <div class="d-flex">
+                                <div class="activity-content flex-grow-1">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="activity-icon me-3">
+                                            <i class="fas fa-sticky-note text-primary"></i>
+                                        </div>
+                                        <span class="badge bg-primary me-3">Note</span>
+                                        <span class="small text-muted">To Do</span>
+                                    </div>
+                                    <p class="mb-2">Lorem dolore sit et aute cupidatat eu Lorem tempor proident
+                                        consequat. In dolore mollit laborum ex cillum laboris occaecat ipsum Lorem
+                                        cupidatat.</p>
+                                    <div class="">
+                                        <a href="#" class="text-primary small">1 Association(s)</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-user-circle me-1"></i>
+                                            <span class="small">John Doe</span>
+                                        </div>
+                                        <span class="small text-muted">Jul 12, 2023, 11:54 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-item mb-4 p-4 border">
+                            <div class="d-flex">
+                                <div class="activity-content flex-grow-1">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="activity-icon me-3">
+                                            <i class="fas fa-sticky-note text-primary"></i>
+                                        </div>
+                                        <span class="badge bg-primary me-3">Note</span>
+                                        <span class="small text-muted">To Do</span>
+                                    </div>
+                                    <p class="mb-2">Lorem dolore sit et aute cupidatat eu Lorem tempor proident
+                                        consequat. In dolore mollit laborum ex cillum laboris occaecat ipsum Lorem
+                                        cupidatat.</p>
+                                    <div class="">
+                                        <a href="#" class="text-primary small">1 Association(s)</a>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-2">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-user-circle me-1"></i>
+                                            <span class="small">John Doe</span>
+                                        </div>
+                                        <span class="small text-muted">Jul 12, 2023, 11:54 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
